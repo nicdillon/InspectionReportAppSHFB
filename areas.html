@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        table#areat {
+            background-color:red;
+            align-content:center;
+        }
+    </style>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: gap: https://newplayground.azurewebsites.net/ https://login.microsoftonline.com/ https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Areas</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h1>Areas</h1>
+            <table id="areat"style="width:100%">
+                <tr>
+                    <th>Area</th>
+                    <th>Complete</th>
+                </tr>
+                <tr>
+                    <td align="center"><a href="report.html">----1----</a></td>
+                    <td align="center">No</td>
+                </tr>
+                <tr>
+                    <td align="center"><a href="report.html">--2--</a></td>
+                    <td align="center">Yes</td>
+                </tr>
+            </table>
+            <table style="width:50%">
+                <tr>
+                    <th>Area</th>
+                    <th>Complete</th>
+                </tr>
+                <tr>
+                    <td align="center">1</td>
+                    <td align="center">No</td>
+                </tr>
+                <tr>
+                    <td align="center">2</td>
+                    <td align="center">Yes</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <!-- NewPlayGround references -->
+    <script src="services/mobileApps/settings/NewPlayGround.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
