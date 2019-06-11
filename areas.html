@@ -1,14 +1,23 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html>
 <head>
     <style>
+        select {
+            background-color: red;
+            
+        }
         table, th, td {
-            border: 1px solid black;
+            
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
         }
-        table#areat {
-            background-color:red;
-            align-content:center;
-        }
+
+            table#areat {
+                border-left: 5px solid red;
+                /background-color: red;
+                align-content: center;
+            }
     </style>
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: gap: https://newplayground.azurewebsites.net/ https://login.microsoftonline.com/ https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
 
@@ -23,36 +32,107 @@
     <div>
         <div>
             <h1>Areas</h1>
-            <table id="areat"style="width:100%">
-                <tr>
-                    <th>Area</th>
-                    <th>Complete</th>
-                </tr>
-                <tr>
-                    <td align="center"><a href="report.html">----1----</a></td>
-                    <td align="center">No</td>
-                </tr>
-                <tr>
-                    <td align="center"><a href="report.html">--2--</a></td>
-                    <td align="center">Yes</td>
-                </tr>
-            </table>
-            <table style="width:50%">
-                <tr>
-                    <th>Area</th>
-                    <th>Complete</th>
-                </tr>
-                <tr>
-                    <td align="center">1</td>
-                    <td align="center">No</td>
-                </tr>
-                <tr>
-                    <td align="center">2</td>
-                    <td align="center">Yes</td>
-                </tr>
-            </table>
+            <select id="areaselect" onChange="updateLink()">
+                <option value="1">Area 1</option>
+                <option value="2">Area 2</option>
+                <option value="3">Area 3</option>
+                <option value="4">Area 4</option>
+                <option value="5">Area 5</option>
+                <option value="6">Area 6</option>
+                <option value="7">Area 7</option>
+                <option value="8">Area 8</option>
+            </select>
+            <a id="arealink" href="area1.html" class="login greeting">Go</a>
+            <hr />
+            <div class="area">
+                <div class="area left">
+                    <table id="areat" class="area">
+                        <tr>
+                            <th>Area</th>
+                            <th>Complete</th>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area1.html">----1----</a></td>
+                            <td align="center">No</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area2.html">----2----</a></td>
+                            <td align="center">No</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area3.html">----3----</a></td>
+                            <td align="center">No</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area4.html">----4----</a></td>
+                            <td align="center">No</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area5.html">----5----</a></td>
+                            <td align="center">No</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area6.html">----6----</a></td>
+                            <td align="center">No</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area7.html">----7----</a></td>
+                            <td align="center">No</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area8.html">----8----</a></td>
+                            <td id="area8check" align="center">No</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="area right">
+                    <table style="border: none">
+                        <tr>
+                            <td>Area:</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>Date:</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>Employee:</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>Manager:</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>Tasks:</td>
+                            <td>Incomplete</td>
+                        </tr>
+                        <tr>
+                            <td>Merits:</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>Demerits:</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>Comments:</td>
+                            <td>None</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+            <button typeof="button" onclick="window.alert('Forms Submitted')" class="login greeting">Finish</button>
         </div>
     </div>
+
+    <script>
+        function updateLink() {
+            var link = 'area' + document.getElementById("areaselect").value + '.html';
+            document.getElementById("arealink").href = link;
+        }
+    </script>
     <script type="text/javascript" src="cordova.js"></script>
 
     <!-- NewPlayGround references -->

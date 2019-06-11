@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: gap: https://newplayground.azurewebsites.net/ https://login.microsoftonline.com/ https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Report</title>
+</head>
+<body>
+    <div>
+
+        <h2>Area 1</h2>
+    </div>
+    <nav>
+        <a href="areas.html" class="login back">Back</a>
+    </nav>
+    <div class="loginform">
+        <input type="text" name="employee" placeholder="Employee" />
+        <form name="area1form" method="post" action="submit.php">
+            
+            <hr />
+            <input type="text" name="manager" placeholder="Manager" />
+            <hr />
+            Trash Picked Up & Removed
+            <input type="checkbox" name="trash"  value="done"/><br />
+            <hr />
+            No Pallets, Bins, or Boxes Outside Pallet Area
+            <input type="checkbox" name="pallets" value="done"/><br />
+            <hr />
+            <textarea name="comment1" placeholder="Comments"></textarea><br />
+
+            <hr />
+            <input type="submit" name="area report sumbit" onclick="updateArea()" />
+        </form>
+        <button typeof="button" name="updateVar" onclick="updateVar()">Done</button>
+        <!--<a href="https://outlook.office365.com/owa/?realm=shfbm.org&path=/mail/inbox">Email</a>
+        -->
+    </div>
+    <script>
+        function updateVar() {
+            var taskOne = document.getElementById('pallets');
+            var taskTwo = document.getElementById('trash');
+            if (taskOne=='done' && taskTwo=='done') {
+                areaOneComplete = "Done";
+                document.write("done");
+            }
+            areaOneEmployee = document.getElementById('employee');
+            document.write(taskOne);
+        }
+        function updateArea() {
+            var table = document.getElementById("areaselect");
+            table.rows[1].cells[1].innerHTML = 'Yes';
+        }
+    </script>
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <!-- NewPlayGround references -->
+    <script src="services/mobileApps/settings/NewPlayGround.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
