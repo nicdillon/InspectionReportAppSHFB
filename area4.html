@@ -8,33 +8,62 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="scripts/general.js"></script>
     <title>Area 4</title>
 </head>
 <body>
     <div>
-
         <h1>Area 4</h1>
     </div>
     <nav>
         <a href="areas.html" class="login back">Back</a>
     </nav>
-    <div class="loginform">
-
-        <form>
-            Task 1
-            <input type="checkbox" /><br />
-            <input type="text" name="task1 comment" placeholder="Comments" /><br />
-            Task 2
-            <input type="checkbox" /><br />
-            <input type="text" name="task2 comment" placeholder="Comments" /><br />
-            Task 3
-            <input type="checkbox" /><br />
-            <input type="text" name="task3 comment" placeholder="Comments" /><br />
-            Task 4
-            <input type="checkbox" /><br />
-            <input type="text" name="task4 comment" placeholder="Comments" /><br />
-            <br />
-            <input type="submit" name="area report sumbit" />
+    <div class="loginform long">
+        <form name="area4form" method="post" action="http://10.0.2.126/index.php">
+            <input type="hidden" name="areaNum" value="4" />
+            <input type="text" name="employee" placeholder="Employee" />
+            <hr />
+            <input type="text" name="manager" placeholder="Manager" />
+            <hr />
+            Floors Swept Debris Removed
+            <input type="checkbox" name="floor debree" value="done" /><br />
+            <hr />
+            Trash Cans Emptied and Cleaned
+            <input type="checkbox" name="trash cans" value="done" /><br />
+            <hr />
+            Floors Mopped and Scrubbed (Weekly)
+            <input type="checkbox" name="mopped" value="done" /><br />
+            <hr />
+            White Linens Are Clean
+            <input type="checkbox" name="linens" value="done" /><br />
+            <hr />
+            No Cobwebs
+            <input type="checkbox" name="cobwebs" value="done" /><br />
+            <hr />
+            Warehouse Racks - No Leaking Products, Debris, or Pallets Need Restacking
+            <input type="checkbox" name="warehouse racks" value="done" /><br />
+            <hr />
+            No Damaged Pallets
+            <input type="checkbox" name="damaged pallets" value="done" /><br />
+            <hr />
+            Exits Clear
+            <input type="checkbox" name="exits" value="done" /><br />
+            <hr />
+            Trash Cans Washed Monthly (as needed)
+            <input type="checkbox" name="trash cans washed" value="done" /><br />
+            <hr />
+            Eyewash Station is Clear
+            <input type="checkbox" name="eyewash station" value="done" /><br />
+            <hr />
+            Bucket at Eyewash Station is Empty
+            <input type="checkbox" name="eyewash bucket" value="done" /><br />
+            <hr />
+            Racks Dusted
+            <input type="checkbox" name="dusted" value="done" /><br />
+            <hr />
+            <textarea name="comment" placeholder="Comments"></textarea><br />
+            <hr />
+            <input type="submit" class="login greeting" name="area report sumbit" onclick="updateArea(4)" />
         </form>
     </div>
 </body>

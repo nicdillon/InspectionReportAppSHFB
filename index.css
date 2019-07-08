@@ -1,0 +1,240 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+	background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #FFA7A7),
+        color-stop(0.51, #E4E4E4)
+    );
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+	
+    background-color:#32383d;
+    font-family: 'RobotoRegular', 'Droid Sans', 'Segoe UI', Segoe, 'San Francisco', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+    font-size:12px;
+    /padding-bottom: 100px;
+}
+
+.app {
+    background: url(../images/2nd-harvest-logo.png) no-repeat center center; 
+    position: absolute;             
+    left: 50%;
+    top: 50%;
+    height: 50px;                  
+    width: 225px;                   
+    text-align: center;
+    padding: 180px 0px 0px 0px;     
+    margin: -180px 0px 0px -112px;
+}
+
+.loginform {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 40% 0;
+    /margin: -300px 0px 0px -112px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+    .loginform.long {
+        padding: 10% 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        top: 50%;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 50px;
+        align-content: center;
+    }
+
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;
+        margin:-90px 0px 0px -198px;
+    }
+}
+
+h1 {
+    font-size:28px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:50px;
+    text-align:center;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:10px 30px;
+    padding:2px 0px;
+    align-content: center;
+}
+
+.event.listening {
+    background-color:#FF0000;
+    display:block;
+}
+
+.event.received {
+    background-color:#FF0000;
+    display:none;
+}
+
+
+.login {
+    border-radius: 4px;
+    -webkit-border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 12px;
+    margin: 15px;
+    padding: 4px 4px;
+    align-content: center;
+}
+
+.login.greeting {
+    background-color: #FF0000;
+    
+    align-content: center;
+}
+
+.login.back {
+    background-color: #FF0000;
+    align-content: flex-start ;
+    margin: 10px;
+    top: 30px;
+}
+
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+.blink1 {
+    animation-delay: 1500ms;
+    animation: fade 3000ms infinite;
+    -webkit-animation: fade 3000ms infinite;
+}
+
+.area {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+.area.left {
+    flex: 1.5;
+
+}
+
+.area.right {
+    flex: 1.5;
+  / border-left: 6px solid black;
+    
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: normal;
+    margin: 0px 0px 20px 0px;
+    overflow: visible;
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    border-bottom: 5px groove red;
+    color: white;
+    border-radius: 0px 0px 0px 100px;
+    /position: fixed;
+}
+
+h3 {
+    text-align: center;
+
+}
+
+a.class1:link {
+    color: darkred;
+}
+
+a.class1:visited {
+    color: darkred;
+}
+
+a.footer:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a.footer:link {
+    color: white;
+    text-decoration: none;
+}
+
+a.footer:hover{
+    color: silver;
+    text-decoration: none;
+}
+
+footer {
+    border-top: 5px groove white;
+    border-radius: 100px 0px 0px 0px;
+    /height: 27%;
+    padding: 15px;
+    text-align: center;
+    background: dimgrey;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+rounded {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+hr {
+    border-top: 1px solid black;
+}
+

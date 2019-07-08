@@ -11,23 +11,17 @@
     <title>Log In</title>
 </head>
 <body>
-    <div>
-        <h1>Log In</h1>
-
-        <div class="loginform">
-            <a class="event listening" href="index.html">Home Page</a>
-            <form>
-                Email<br>
-                <input type="text" name="firstname"><br>
-                Password<br>
-                <input type="text" name="lastname">
-            </form>
-            <button class="login greeting" typeof="button" onclick="window.alert('Log in unsuccessful')">Log In</button><br />
-            <a href="areas.html">Areas</a>
-        </div>
+    <h2>Log In</h2>
+    <a class="login greeting" href="index.html">Home Page</a>
+    <div class="loginform">
+        <form>
+            <input type="text" name="firstname" placeholder="email"><br>
+            <input type="text" name="lastname" placeholder="password">
+        </form>
     </div>
+    <button class="login greeting" typeof="button" onclick="window.alert('Log in unsuccessful')">Log In</button><br />
+    <a href="areas.html" class="login greeting">Areas</a>
     <script type="text/javascript" src="cordova.js"></script>
-
     <!-- NewPlayGround references -->
     <script src="services/mobileApps/settings/NewPlayGround.js"></script>
     <script type="text/javascript" src="scripts/platformOverrides.js"></script>

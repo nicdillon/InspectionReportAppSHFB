@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: gap: https://newplayground.azurewebsites.net/ https://login.microsoftonline.com/ https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="scripts/general.js"></script>
+    <title>Area 27</title>
+</head>
+<body>
+    <div>
+        <h1>Area 27</h1>
+    </div>
+    <nav>
+        <a href="areas.html" class="login back">Back</a>
+    </nav>
+    <div class="loginform long">
+        <form name="area27form" method="post" action="http://10.0.2.126/index.php">
+            <input type="hidden" name="areaNum" value="27" />
+            <input type="text" name="employee" placeholder="Employee" />
+            <hr />
+            <input type="text" name="manager" placeholder="Manager" />
+            <hr />
+            All Traps Clean
+            <input type="checkbox" name="clean traps" value="done" /><br />
+            <hr />
+            All Traps in Designated Locations
+            <input type="checkbox" name="trap locations" value="done" /><br />
+            <hr />
+            Notify Damaged Traps to Warehouse Manager
+            <input type="checkbox" name="damaged traps" value="done" /><br />
+            <hr />
+            COO Notified of Trap Having More Than 2 Mice within a Week
+            <input type="checkbox" name="coo" value="done" /><br />
+            <hr />
+            <textarea name="comment" placeholder="Comments"></textarea><br />
+            <hr />
+            <input type="submit" class="login greeting" name="area report sumbit" onclick="updateArea(27)" />
+        </form>
+    </div>
+</body>
+</html>

@@ -1,38 +1,34 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <style>
         select {
             background-color: red;
-            
+            margin: 15px;
         }
-        table, th, td {
-            
+        th, td {
             border-bottom: 1px solid black;
             border-right: 1px solid black;
+            border-left: 4px solid black;
         }
-
-            table#areat {
-                border-left: 5px solid red;
-                /background-color: red;
+        table#areat {
                 align-content: center;
             }
     </style>
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: gap: https://newplayground.azurewebsites.net/ https://login.microsoftonline.com/ https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="scripts/general.js"></script>
     <title>Areas</title>
 </head>
-<body>
+<body onload="update()">
     <div>
         <div>
-            <h1>Areas</h1>
-            <select id="areaselect" onChange="updateLink()">
+            <h2>Areas</h2>
+            <select id="areaselect" class="rounded" onChange="updateLink()">
                 <option value="1">Area 1</option>
                 <option value="2">Area 2</option>
                 <option value="3">Area 3</option>
@@ -41,6 +37,25 @@
                 <option value="6">Area 6</option>
                 <option value="7">Area 7</option>
                 <option value="8">Area 8</option>
+                <option value="9">Area 9</option>
+                <option value="10">Area 10</option>
+                <option value="11">Area 11</option>
+                <option value="12">Area 12</option>
+                <option value="13">Area 13</option>
+                <option value="14">Area 14</option>
+                <option value="15">Area 15</option>
+                <option value="16">Area 16</option>
+                <option value="17">Area 17</option>
+                <option value="18">Area 18</option>
+                <option value="19">Area 19</option>
+                <option value="20">Area 20</option>
+                <option value="21">Area 21</option>
+                <option value="22">Area 22</option>
+                <option value="23">Area 23</option>
+                <option value="24">Area 24</option>
+                <option value="25">Area 25</option>
+                <option value="26">Area 26</option>
+                <option value="27">Area 27</option>
             </select>
             <a id="arealink" href="area1.html" class="login greeting">Go</a>
             <hr />
@@ -52,92 +67,173 @@
                             <th>Complete</th>
                         </tr>
                         <tr>
-                            <td align="center"><a href="area1.html">----1----</a></td>
+                            <td align="center"><a href="area1.html" class="class1">----1----</a></td>
                             <td align="center">No</td>
                         </tr>
                         <tr>
-                            <td align="center"><a href="area2.html">----2----</a></td>
+                            <td align="center"><a href="area2.html" class="class1">----2----</a></td>
                             <td align="center">No</td>
                         </tr>
                         <tr>
-                            <td align="center"><a href="area3.html">----3----</a></td>
+                            <td align="center"><a href="area3.html" class="class1">----3----</a></td>
                             <td align="center">No</td>
                         </tr>
                         <tr>
-                            <td align="center"><a href="area4.html">----4----</a></td>
+                            <td align="center"><a href="area4.html" class="class1">----4----</a></td>
                             <td align="center">No</td>
                         </tr>
                         <tr>
-                            <td align="center"><a href="area5.html">----5----</a></td>
+                            <td align="center"><a href="area5.html" class="class1">----5----</a></td>
                             <td align="center">No</td>
                         </tr>
                         <tr>
-                            <td align="center"><a href="area6.html">----6----</a></td>
+                            <td align="center"><a href="area6.html" class="class1">----6----</a></td>
                             <td align="center">No</td>
                         </tr>
                         <tr>
-                            <td align="center"><a href="area7.html">----7----</a></td>
+                            <td align="center"><a href="area7.html" class="class1">----7----</a></td>
                             <td align="center">No</td>
                         </tr>
                         <tr>
-                            <td align="center"><a href="area8.html">----8----</a></td>
+                            <td align="center"><a href="area8.html" class="class1">----8----</a></td>
                             <td id="area8check" align="center">No</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area9.html" class="class1">----9----</a></td>
+                            <td id="area9check" align="center">No</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area10.html" class="class1">----10----</a></td>
+                            <td id="area10check" align="center">No</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area11.html" class="class1">----11----</a></td>
+                            <td id="area11check" align="center">No</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area12.html" class="class1">----12----</a></td>
+                            <td id="area12check" align="center">No</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area13.html" class="class1">----13----</a></td>
+                            <td id="area13check" align="center">No</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area14.html" class="class1">----14----</a></td>
+                            <td id="area14check" align="center">No</td>
                         </tr>
                     </table>
                 </div>
                 <div class="area right">
-                    <table style="border: none">
+                    <table id="areat2">
                         <tr>
-                            <td>Area:</td>
-                            <td>None</td>
+                            <th>Area</th>
+                            <th>Complete</th>
                         </tr>
                         <tr>
-                            <td>Date:</td>
-                            <td>None</td>
+                            <td align="center"><a href="area15.html" class="class1">----15----</a></td>
+                            <td align="center">No</td>
                         </tr>
                         <tr>
-                            <td>Employee:</td>
-                            <td>None</td>
+                            <td align="center"><a href="area16.html" class="class1">----16----</a></td>
+                            <td align="center">No</td>
                         </tr>
                         <tr>
-                            <td>Manager:</td>
-                            <td>None</td>
+                            <td align="center"><a href="area17.html" class="class1">----17----</a></td>
+                            <td align="center">No</td>
                         </tr>
                         <tr>
-                            <td>Tasks:</td>
-                            <td>Incomplete</td>
+                            <td align="center"><a href="area18.html" class="class1">----18----</a></td>
+                            <td align="center">No</td>
                         </tr>
                         <tr>
-                            <td>Merits:</td>
-                            <td>None</td>
+                            <td align="center"><a href="area19.html" class="class1">----19----</a></td>
+                            <td align="center">No</td>
                         </tr>
                         <tr>
-                            <td>Demerits:</td>
-                            <td>None</td>
+                            <td align="center"><a href="area20.html" class="class1">----20----</a></td>
+                            <td align="center">No</td>
                         </tr>
                         <tr>
-                            <td>Comments:</td>
-                            <td>None</td>
+                            <td align="center"><a href="area21.html" class="class1">----21----</a></td>
+                            <td align="center">No</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area22.html" class="class1">----22----</a></td>
+                            <td id="area8check" align="center">No</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area23.html" class="class1">----23----</a></td>
+                            <td id="area9check" align="center">No</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area24.html" class="class1">----24----</a></td>
+                            <td id="area10check" align="center">No</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area25.html" class="class1">----25----</a></td>
+                            <td id="area11check" align="center">No</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area26.html" class="class1">----26----</a></td>
+                            <td id="area12check" align="center">No</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a href="area27.html" class="class1">----27----</a></td>
+                            <td id="area13check" align="center">No</td>
                         </tr>
                     </table>
-
                 </div>
             </div>
-            <button typeof="button" onclick="window.alert('Forms Submitted')" class="login greeting">Finish</button>
+            <button onclick="localStorage.clear(); update()" class="login greeting">Finish</button>
+            <a href="http://10.0.2.126/index2.php" class="login greeting">Review</a>
         </div>
-    </div>
 
+    </div>
+    <footer>
+        <a href="areas.html" class="footer">Areas</a>
+        |
+        <a href="http://10.0.2.126/index2.php" class="footer">Reports</a>
+        |
+        <a href="login.html" class="footer">Login</a>
+    </footer>
     <script>
+        function clear() {
+            window.alert("ok");
+            localStorage.clear();
+            update();
+        }
         function updateLink() {
             var link = 'area' + document.getElementById("areaselect").value + '.html';
             document.getElementById("arealink").href = link;
         }
+        function update() {
+            var table = document.getElementById("areat");
+            var tableLeft = document.getElementById("areat2");
+            for (var i = 1; i < 28; i++) {
+                var currentArea = "Area" + i;
+                if (storage.getItem(currentArea) == "Yes") {
+                    if (i < 15) {
+                        table.rows[i].cells[1].innerHTML = storage.getItem(currentArea);
+                    }
+                    else {
+                        tableLeft.rows[i - 14].cells[1].innerHTML = storage.getItem(currentArea);
+                    }
+                }
+                else {
+                    if (i < 15) {
+                        table.rows[i].cells[1].innerHTML = "No";
+                    }
+                    else {
+                        tableLeft.rows[i - 14].cells[1].innerHTML = "No";
+                    }
+                }
+            }
+        }
     </script>
     <script type="text/javascript" src="cordova.js"></script>
-
     <!-- NewPlayGround references -->
     <script src="services/mobileApps/settings/NewPlayGround.js"></script>
     <script type="text/javascript" src="scripts/platformOverrides.js"></script>
-    <script type="text/javascript" src="scripts/index.js"></script>
 </body>
 </html>

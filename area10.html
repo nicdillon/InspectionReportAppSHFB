@@ -2,54 +2,54 @@
 <html>
 <head>
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: gap: https://newplayground.azurewebsites.net/ https://login.microsoftonline.com/ https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <script src="scripts/general.js"></script>
-    <title>Report</title>
+    <title>Area 10</title>
 </head>
 <body>
     <div>
-        <h2>Area 1</h2>
+
+        <h1>Area 10</h1>
     </div>
     <nav>
         <a href="areas.html" class="login back">Back</a>
     </nav>
     <div class="loginform">
-        <form name="area1form" method="post" action="http://10.0.2.126/index.php">
-            <input type="hidden" name="areaNum" value="1" />
+        <form name="area10form" method="post" action="http://10.0.2.126/index.php">
+            <input type="hidden" name="areaNum" value="10" />
             <input type="text" name="employee" placeholder="Employee" />
             <hr />
-            <input type="text" class="rounded" name="manager" placeholder="Manager" />
+            <input type="text" name="manager" placeholder="Manager" />
             <hr />
             Trash Picked Up & Removed
             <input type="checkbox" name="trash" value="done" /><br />
             <hr />
-            No Pallets, Bins, or Boxes Outside Pallet Area
+            All Pallets Inside Pallet Area
             <input type="checkbox" name="pallets" value="done" /><br />
+            <hr />
+            All Pallets Stacked and Organized
+            <input type="checkbox" name="organized" value="done" /><br />
+            <hr />
+            All Trash boards/plastic inside Wooden Bin
+            <input type="checkbox" name="boards" value="done" /><br />
+            <hr />
+            All Plastic Crates on Pallet and Shrink Wrapped
+            <input type="checkbox" name="crates" value="done" /><br />
             <hr />
             <textarea name="comment" placeholder="Comments"></textarea><br />
             <hr />
-            <input type="submit" class="login greeting" name="area report submit" onclick="updateArea(1)"/>
+            <input type="submit" class="login greeting" name="area report sumbit" onclick="updateArea(10)" />
         </form>
     </div>
-    <footer>
-        <a href="areas.html" class="footer">Areas</a>
-        | 
-        <a href="http://10.0.2.126/index2.php" class="footer">Reports</a>
-        |
-        <a href="login.html" class="footer">Login</a>
-    </footer>
-    <script>
-        function updateComplete() {
-            window.alert("Report Submitted");
-        }
-    </script>
+    
     <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="scripts/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- NewPlayGround references -->
     <script src="services/mobileApps/settings/NewPlayGround.js"></script>
     <script type="text/javascript" src="scripts/platformOverrides.js"></script>
     <script type="text/javascript" src="scripts/index.js"></script>
