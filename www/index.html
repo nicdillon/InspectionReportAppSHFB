@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="assets/ratchet/css/ratchet.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/pageslider.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+</head>
+<body>
+
+<script id="home-tpl" type="text/template">
+    <div>
+    <div>
+    <h2>Areas</h2>
+    <select id="areaselect" class="rounded" onChange="updateLink()">
+    <option value="1">Area 1</option>
+    <option value="2">Area 2</option>
+    <option value="3">Area 3</option>
+    <option value="4">Area 4</option>
+    <option value="5">Area 5</option>
+    <option value="6">Area 6</option>
+    <option value="7">Area 7</option>
+    <option value="8">Area 8</option>
+    <option value="9">Area 9</option>
+    <option value="10">Area 10</option>
+    <option value="11">Area 11</option>
+    <option value="12">Area 12</option>
+    <option value="13">Area 13</option>
+    <option value="14">Area 14</option>
+    <option value="15">Area 15</option>
+    <option value="16">Area 16</option>
+    <option value="17">Area 17</option>
+    <option value="18">Area 18</option>
+    <option value="19">Area 19</option>
+    <option value="20">Area 20</option>
+    <option value="21">Area 21</option>
+    <option value="22">Area 22</option>
+    <option value="23">Area 23</option>
+    <option value="24">Area 24</option>
+    <option value="25">Area 25</option>
+    <option value="26">Area 26</option>
+    <option value="27">Area 27</option>
+    </select>
+    <a id="arealink" href="#" class="login greeting">Go</a>
+    <button onclick="localStorage.clear(); update()" class="login greeting">Finish</button>
+    <a href="http://10.0.2.126/index2.php" class="login greeting">Review</a>
+    <hr />
+    <div class="area">
+    <div class="area left">
+    <table id="areat" class="area">
+    <tr>
+    <th>Area</th>
+    <th>Complete</th>
+    </tr>
+    <tr>
+    <td align="center"><a href="area1.html" class="class1">----1----</a></td>
+    <td align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area2.html" class="class1">----2----</a></td>
+    <td align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area3.html" class="class1">----3----</a></td>
+    <td align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area4.html" class="class1">----4----</a></td>
+    <td align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area5.html" class="class1">----5----</a></td>
+    <td align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area6.html" class="class1">----6----</a></td>
+    <td align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area7.html" class="class1">----7----</a></td>
+    <td align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area8.html" class="class1">----8----</a></td>
+    <td id="area8check" align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area9.html" class="class1">----9----</a></td>
+    <td id="area9check" align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area10.html" class="class1">----10----</a></td>
+    <td id="area10check" align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area11.html" class="class1">----11----</a></td>
+    <td id="area11check" align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area12.html" class="class1">----12----</a></td>
+    <td id="area12check" align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area13.html" class="class1">----13----</a></td>
+    <td id="area13check" align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area14.html" class="class1">----14----</a></td>
+    <td id="area14check" align="center">No</td>
+    </tr>
+    </table>
+    </div>
+    <div class="area right">
+    <table id="areat2">
+    <tr>
+    <th>Area</th>
+    <th>Complete</th>
+    </tr>
+    <tr>
+    <td align="center"><a href="area15.html" class="class1">----15----</a></td>
+    <td align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area16.html" class="class1">----16----</a></td>
+    <td align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area17.html" class="class1">----17----</a></td>
+    <td align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area18.html" class="class1">----18----</a></td>
+    <td align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area19.html" class="class1">----19----</a></td>
+    <td align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area20.html" class="class1">----20----</a></td>
+    <td align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area21.html" class="class1">----21----</a></td>
+    <td align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area22.html" class="class1">----22----</a></td>
+    <td id="area8check" align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area23.html" class="class1">----23----</a></td>
+    <td id="area9check" align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area24.html" class="class1">----24----</a></td>
+    <td id="area10check" align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area25.html" class="class1">----25----</a></td>
+    <td id="area11check" align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area26.html" class="class1">----26----</a></td>
+    <td id="area12check" align="center">No</td>
+    </tr>
+    <tr>
+    <td align="center"><a href="area27.html" class="class1">----27----</a></td>
+    <td id="area13check" align="center">No</td>
+    </tr>
+    </table>
+    
+    </div>
+    </div>
+    <hr>
+    <div class="img-div">
+    <img src="images/AreasMap.png" alt="">
+    </div>
+    </div>
+    </div>
+    <footer>
+    <a href="areas.html" class="footer">Areas</a>
+    |
+    <a href="http://10.0.2.126/index2.php" class="footer">Reports</a>
+    |
+    <a href="login.html" class="footer">Login</a>
+    </footer>
+</script>
+
+<script id="employee-list-tpl" type="text/template">
+    <ul class="table-view">
+        {{#each this}}
+        <li class="table-view-cell media">
+            <a href="#employees/{{ id }}">
+                <img class="media-object pull-left" src="assets/pics/{{pic}}">
+                <div class="media-body">
+                    {{firstName}} {{lastName}}
+                    <p>{{title}}</p>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+
+<script id="area-tpl" type="text/template">
+    <div>
+    <h2>Area 1</h2>
+    </div>
+    <nav>
+    <a href="areas.html" class="login back">Back</a>
+    </nav>
+    <div class="loginform">
+    <form name="area1form" method="post" action="http://10.0.2.126/index.php">
+    <input type="hidden" name="areaNum" value="1" />
+    <input type="text" name="employee" placeholder="Employee" />
+    <hr />
+    <input type="text" class="rounded" name="manager" placeholder="Manager" />
+    <hr />
+    Trash Picked Up and Removed
+    <input type="checkbox" name="trash" value="done" /><br />
+    <hr />
+    No Pallets, Bins, or Boxes Outside Pallet Area
+    <input type="checkbox" name="pallets" value="done" /><br />
+    <hr />
+    <textarea name="comment" placeholder="Comments"></textarea><br />
+    <hr />
+    <input type="submit" class="login greeting" name="area report submit" onclick="updateArea(1)"/>
+    </form>
+    </div>
+    <footer>
+    <a href="areas.html" class="footer">Areas</a>
+    |
+    <a href="http://10.0.2.126/index2.php" class="footer">Reports</a>
+    |
+    <a href="login.html" class="footer">Login</a>
+    </footer>
+</script>
+
+<script id="employee-tpl" type="text/template">
+    <header class="bar bar-nav">
+        <a class="btn btn-link btn-nav pull-left" href="#">
+            <span class="icon icon-left-nav"></span>
+        </a>
+        <h1 class="title">Employee</h1>
+    </header>
+    <div class="content">
+        <div class="card">
+            <ul class="table-view">
+                <li class="table-view-cell media">
+                    <img class="media-object pull-left" src="assets/pics/{{pic}}">
+                    <div class="media-body">
+                        {{ firstName }} {{ lastName }}
+                        <p>{{ title }}</p>
+                    </div>
+                </li>
+                <li class="table-view-cell media">
+                    <a href="tel:{{ officePhone }}" class="push-right">
+                        <span class="media-object pull-left icon icon-call"></span>
+                        <div class="media-body">
+                            Call Office
+                            <p>{{ officePhone }}</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="table-view-cell media">
+                    <a href="tel:{{ cellPhone }}" class="push-right">
+                        <span class="media-object pull-left icon icon-call"></span>
+                        <div class="media-body">
+                            Call Cell
+                            <p>{{ cellPhone }}</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="table-view-cell media">
+                    <a href="sms:{{ cellPhone }}" class="push-right">
+                        <span class="media-object pull-left icon icon-sms"></span>
+                        <div class="media-body">
+                            SMS
+                            <p>{{ cellPhone }}</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="table-view-cell media">
+                    <a href="mailto:{{ email }}" class="push-right">
+                        <span class="media-object pull-left icon icon-mail"></span>
+                        <div class="media-body">
+                            Email
+                            <p>{{ email }}</p>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</script>
+
+<script>
+function clear() {
+    window.alert("ok");
+    localStorage.clear();
+    update();
+}
+function updateLink() {
+    var link = 'area' + document.getElementById("areaselect").value + '.html';
+    document.getElementById("arealink").href = link;
+}
+function update() {
+    var table = document.getElementById("areat");
+    var tableLeft = document.getElementById("areat2");
+    for (var i = 1; i < 28; i++) {
+        var currentArea = "Area" + i;
+        if (storage.getItem(currentArea) == "Yes") {
+            if (i < 15) {
+                table.rows[i].cells[1].innerHTML = storage.getItem(currentArea);
+            }
+            else {
+                tableLeft.rows[i - 14].cells[1].innerHTML = storage.getItem(currentArea);
+            }
+        }
+        else {
+            if (i < 15) {
+                table.rows[i].cells[1].innerHTML = "No";
+            }
+            else {
+                tableLeft.rows[i - 14].cells[1].innerHTML = "No";
+            }
+        }
+    }
+}
+</script>
+
+<script src="cordova.js"></script>
+<script src="lib/fastclick.js"></script>
+<script src="lib/handlebars.js"></script>
+<script src="lib/jquery.js"></script>
+<script src="lib/pageslider.js"></script>
+<script src="lib/router.js"></script>
+<script src="js/services/memory/EmployeeService.js"></script>
+<script src="js/EmployeeListView.js"></script>
+<script src="js/AreaListView.js"></script>
+<script src="js/HomeView.js"></script>
+<script src="js/EmployeeView.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
